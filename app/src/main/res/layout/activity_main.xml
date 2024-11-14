@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F5F5DC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#A52A2A"
+        android:gravity="center"
+        android:text="Gra w kości. Autor: Maksymilian Baranowski."
+        android:textColor="#F8F7F7"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp" />
+
+
+    <Button
+        android:id="@+id/Rzut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2691E"
+        android:text="RZUĆ KOŚĆMI"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/diceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/kostka1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="?"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:layout_margin="9dp" />
+
+        <TextView
+            android:id="@+id/kostka2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="?"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:layout_margin="9dp" />
+
+        <TextView
+            android:id="@+id/kostka3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="?"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:layout_margin="9dp" />
+
+        <TextView
+            android:id="@+id/kostka4"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="?"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:layout_margin="9dp" />
+
+        <TextView
+            android:id="@+id/kostka5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="?"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:layout_margin="9dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Wynik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wynik tego losowania: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/wynikGry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wynik gry: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/liczbaRzutow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liczba rzutów: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2691E"
+        android:text="Resetuj wynik"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>
